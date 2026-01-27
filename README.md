@@ -37,9 +37,9 @@ import VLCKit
 1. Check if there is a new stable version of VLCKit available at:
    https://download.videolan.org/pub/cocoapods/prod/
 
-2. Open a terminal and navigate to the `Scripts` folder within this repository.
+2. Update the URLs inside the `Scripts/generate-vlc-kit.sh` script for iOS, macOS, and tvOS to match the VLCKit version you want to download.
 
-3. Update the URLs inside the `generate-vlc-kit.sh` script for iOS, macOS, and tvOS to match the VLCKit version you want to download.
+3. Open a terminal and navigate to the `Scripts` folder within this repository.
 
 4. Run the script:
    ```bash
@@ -53,9 +53,9 @@ import VLCKit
 
 6. Open `Package.swift` and update:
    - The **URL** to point to the new release (only update the version number in the URL).
-   - The **checksum** value with the new hash printed by the script.
+   - The **checksum** (binary hash) value with the new hash printed by the script.
 
-7. Commit and push your changes.
+7. Commit and push your changes in Package.swift and .generate-vlc-kit.sh.
 
 8. Create a new **tag** matching the version of the updated VLCKit.
 
