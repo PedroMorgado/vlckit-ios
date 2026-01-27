@@ -53,9 +53,9 @@ import VLCKit
 
 6. Open `Package.swift` and update:
    - The **URL** to point to the new release (only update the version number in the URL).
-   - The **checksum** value with the new hash printed by the script.
+   - The **checksum** (binary hash) value with the new hash printed by the script.
 
-7. Commit and push your changes.
+7. Commit and push your changes (only Package.swift; don’t commit the tmp folder or its contents).
 
 8. Create a new **tag** matching the version of the updated VLCKit.
 
