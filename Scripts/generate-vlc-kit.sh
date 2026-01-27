@@ -3,9 +3,9 @@
 TMP_DIR="tmp"
 rm -rf "$TMP_DIR/" || true
 
-IOS_URL="https://download.videolan.org/pub/cocoapods/prod/MobileVLCKit-3.6.0-c73b779f-dd8bfdba.tar.xz"
-MACOS_URL="https://download.videolan.org/pub/cocoapods/prod/VLCKit-3.6.0-c73b779f-dd8bfdba.tar.xz"
-TVOS_URL="https://download.videolan.org/cocoapods/prod/TVVLCKit-3.6.0-c73b779f-dd8bfdba.tar.xz"
+IOS_URL="https://download.videolan.org/pub/cocoapods/prod/MobileVLCKit-3.7.2-3e42ae47-79128878.tar.xz"
+MACOS_URL="https://download.videolan.org/pub/cocoapods/prod/VLCKit-3.7.2-3e42ae47-79128878.tar.xz"
+TVOS_URL="https://download.videolan.org/pub/cocoapods/prod/TVVLCKit-3.7.2-3e42ae47-79128878.tar.xz"
 
 mkdir "$TMP_DIR/"
 
