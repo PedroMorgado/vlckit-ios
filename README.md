@@ -46,7 +46,7 @@ import VLCKit
    ./generate-vlc-kit.sh
    ```
 5. The script will:
-   - Download the latest **VLCKit** frameworks for iOS, macOS, and tvOS.
+   - Download the **VLCKit** frameworks for iOS, macOS, and tvOS from the URLs configured in the script.
    - Merge them into a single `.xcframework`.
    - Create a zipped file and display its SHA256 checksum in the terminal.
    - Generate a temporary folder `tmp` inside the `Scripts` directory containing the generated files.
