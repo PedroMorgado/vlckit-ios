@@ -15,7 +15,7 @@ To use this package in your iOS project, add it through **Swift Package Manager*
 1. In Xcode, go to **File > Add Packages...**
 2. Enter the repository URL:
    ```
-   https://github.com/Moral-Apps/vlckit-ios.git
+   https://github.com/PedroMorgado/vlckit-ios.git
    ```
 3. Choose the latest release and add it to your target.
 
