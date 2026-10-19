@@ -67,7 +67,7 @@ import VLCKit
 
 ## 🧩 Notes
 
-- This project does **not** modify or redistribute VLCKit — it simply provides a convenient way to integrate it via SPM.
+- This project redistributes precompiled VLCKit frameworks through SPM without modifying their source code.
 - You must comply with the original [VideoLAN licensing terms](https://www.videolan.org/legal.html).
 - The releases will be updated periodically to include new versions of the official VLCKit framework.
 
@@ -76,7 +76,7 @@ import VLCKit
 ## 🪪 License
 
 This repository does not contain or modify the source code of VLCKit.  
-It only redistributes the official unmodified `VLCKit.xcframework` for Swift Package Manager integration.
+It combines the official precompiled frameworks into a single `VLCKit.xcframework` for Swift Package Manager integration.
 
 VLCKit is licensed under the **LGPLv2.1** by VideoLAN.
 
