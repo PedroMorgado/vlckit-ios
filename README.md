@@ -55,7 +55,7 @@ import VLCKit
    - The **URL** to point to the new release (only update the version number in the URL).
    - The **checksum** (binary hash) value with the new hash printed by the script.
 
-7. Commit and push your changes in `Package.swift` and `.generate-vlc-kit.sh`.
+7. Commit and push your changes in `Package.swift` and `Scripts/generate-vlc-kit.sh`.
 
 8. Create a new **tag** matching the version of the updated VLCKit.
 
