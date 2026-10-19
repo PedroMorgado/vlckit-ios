@@ -2,7 +2,7 @@
 
 This repository provides a **Swift Package Manager (SPM)** compatible wrapper for the [VLCKit framework](https://code.videolan.org/videolan/VLCKit) for iOS.
 
-VLCKit is the official multimedia framework developed by VideoLAN, but it is not directly compatible with SPM.
+VLCKit is the official multimedia framework developed by VideoLAN. This wrapper was created to make VLCKit 3.x available through SPM, as that version does not include native SPM support. VLCKit 4 appears to include official SPM support, as shown by its [package manifest](https://github.com/videolan/vlckit/blob/master/Package.swift).
 
 The current VLCKit version used in this repository is **3.7.3**.
 
