@@ -1,10 +1,10 @@
 # VLCKit-iOS
 
-This repository provides a **Swift Package Manager (SPM)** compatible wrapper for the [VLCKit framework](https://code.videolan.org/videolan/VLCKit) for iOS.
+This repository provides a **Swift Package Manager (SPM)** compatible wrapper for the [VLCKit framework](https://code.videolan.org/videolan/VLCKit) for iOS, tvOS, and macOS.
 
-VLCKit is the official multimedia framework developed by VideoLAN, but it is not directly compatible with SPM.
+VLCKit is the official multimedia framework developed by VideoLAN. This wrapper was created to make VLCKit 3.x available through SPM, as that version does not include native SPM support. VLCKit 4 appears to include official SPM support, as shown by its [package manifest](https://github.com/videolan/vlckit/blob/master/Package.swift).
 
-The current VLCKit version used in this repository is **3.6.0**.
+The current VLCKit version used in this repository is **3.7.3**.
 
 ---
 
@@ -15,7 +15,7 @@ To use this package in your iOS project, add it through **Swift Package Manager*
 1. In Xcode, go to **File > Add Packages...**
 2. Enter the repository URL:
    ```
-   https://github.com/Moral-Apps/vlckit-ios.git
+   https://github.com/PedroMorgado/vlckit-ios.git
    ```
 3. Choose the latest release and add it to your target.
 
@@ -46,7 +46,7 @@ import VLCKit
    ./generate-vlc-kit.sh
    ```
 5. The script will:
-   - Download the latest **VLCKit** frameworks for iOS, macOS, and tvOS.
+   - Download the **VLCKit** frameworks for iOS, macOS, and tvOS from the URLs configured in the script.
    - Merge them into a single `.xcframework`.
    - Create a zipped file and display its SHA256 checksum in the terminal.
    - Generate a temporary folder `tmp` inside the `Scripts` directory containing the generated files.
@@ -55,7 +55,7 @@ import VLCKit
    - The **URL** to point to the new release (only update the version number in the URL).
    - The **checksum** (binary hash) value with the new hash printed by the script.
 
-7. Commit and push your changes in `Package.swift` and `.generate-vlc-kit.sh`.
+7. Commit and push your changes in `Package.swift` and `Scripts/generate-vlc-kit.sh`.
 
 8. Create a new **tag** matching the version of the updated VLCKit.
 
@@ -67,7 +67,7 @@ import VLCKit
 
 ## 🧩 Notes
 
-- This project does **not** modify or redistribute VLCKit — it simply provides a convenient way to integrate it via SPM.
+- This project redistributes precompiled VLCKit frameworks through SPM without modifying their source code.
 - You must comply with the original [VideoLAN licensing terms](https://www.videolan.org/legal.html).
 - The releases will be updated periodically to include new versions of the official VLCKit framework.
 
@@ -76,7 +76,7 @@ import VLCKit
 ## 🪪 License
 
 This repository does not contain or modify the source code of VLCKit.  
-It only redistributes the official unmodified `VLCKit.xcframework` for Swift Package Manager integration.
+It combines the official precompiled frameworks into a single `VLCKit.xcframework` for Swift Package Manager integration.
 
 VLCKit is licensed under the **LGPLv2.1** by VideoLAN.
 
